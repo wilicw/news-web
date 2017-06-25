@@ -19,7 +19,7 @@ $(function(){
                     var news_time=$(this).children("pubDate").text();
     		        var news_description=$(this).children("description").text();
                     var read_url="readudn.html?src="+btoa(encodeURIComponent(news_url));
-                    $("#index_body").append("<div class=\"" + conf_colors + "\"><article class=\"uk-article\"><h1 class=\"uk-article-title\"><a class=\"uk-link-reset\" href=\"" + read_url + "\">" + news_title + "</a></h1><p class=\"uk-article-meta\">聯合新聞網</p><p class=\"uk-text-meta uk-margin-remove-top\"><time datetime=\"" + news_time + "\">April 01, 2016</time></p><p class=\"uk-text-lead\">" + news_description + "</p><div class=\"uk-grid-small uk-child-width-auto\" uk-grid><div class=\"uk-card-footer\"><a class=\"uk-button uk-button-text\" href=\"" + read_url + "\">閱讀更多...</a></div></div></article></div>");
+                    $("#index_body").append("<div class=\"uk-grid\"><div class=\"uk-block\"><h1 class=\"uk-article-title\"><a class=\"uk-link-reset\" href=\"" + read_url + "\">" + news_title + "</a></h1><p class=\"uk-article-meta\">聯合新聞網</p><p class=\"uk-text-meta uk-margin-remove-top\"><time datetime=\"" + news_time + "\">April 01, 2016</time></p><p class=\"uk-text-lead\">" + news_description + "</p><div class=\"uk-grid-small uk-child-width-auto\" uk-grid><div class=\"uk-card-footer\"><a class=\"uk-button uk-button-text\" href=\"" + read_url + "\">閱讀更多...</a></div></div></div></div>");
                 });
             }
         });
