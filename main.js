@@ -7,9 +7,9 @@ $(function(){
             url:'https://udn.com/rssfeed/latest?ch=news',
             type: 'GET',
             dataType: 'xml',
-            timeout: 5000,
+            timeout: 10000,
             error: function(xml){
-                console.log('讀取xml錯誤'+xml);
+                alert('讀取錯誤，請檢察網路狀態或重新開啟');
             },
             success: function(xml){
                 $(xml).find("item").each(function(i){
@@ -32,7 +32,7 @@ $(function(){
             dataType: 'xml',
             timeout: 10000,
             error: function(xml){
-                console.log('讀取xml錯誤'+xml);
+                alert('讀取錯誤，請檢察網路狀態或重新開啟');
             },
             success: function(xml){
                 $(xml).find("item").each(function(i){

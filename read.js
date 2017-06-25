@@ -17,7 +17,7 @@ $(function(){
             dataType: 'html',
             timeout: 10000,
             error: function(data){
-                console.log('讀取錯誤');
+                alert('讀取錯誤，請檢察網路狀態或重新開啟');
             },
             success: function(data){
                 var news1 = data.split("<!-- /#story_bady_info -->",2)[1];
