@@ -15,7 +15,7 @@ $(function(){
             url:urls,
             type: 'GET',
             dataType: 'html',
-            timeout: 5000,
+            timeout: 10000,
             error: function(data){
                 console.log('讀取錯誤');
             },
