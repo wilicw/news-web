@@ -31,6 +31,7 @@ $(function(){
                 $("#index_body").append("<h1 class=\"uk-heading-line uk-text-center\"><span>" + title + "</span></h1>");
                 $("#index_body").append("<p class=\"uk-article-meta\">" + date + "</p>");
                 $("#index_body").append("<div class=\"uk-container\">" + news10 + "<div>");
+                $("#index_head").append("<title>wilicw NEWS - " + title + "</title>");
             }
         });
     }
