@@ -20,7 +20,7 @@ $(function(){
                     var news_time=$(this).children("pubDate").text();
     		        var news_description=$(this).children("description").text();
                     var read_url="readudn.html?src="+btoa(encodeURIComponent(news_url));
-                    $("#index_body").append("<div class=\"panel panel-default\"><div class=\"panel-body\"><div class=\"media\"><div class=\"media-body\"><a class=\"media-left\" href=\"" + news_url + "\"><h2 class=\"media-heading\">" + news_title + "</h2></a><small><time datetime=\"" + news_time + "\"></time></small><p>" + news_description + "</p><a href=\"" + read_url + "\"><button type=\"button\" class=\"btn btn-primary\">閱讀更多...</button></a>   </div></div></div></div>");
+                    $("#index_body").append("<div class=\"panel panel-default\"><div class=\"panel-body\"><div class=\"media\"><div class=\"media-body\"><a class=\"media-left\" href=\"" + read_url + "\"><h2 class=\"media-heading\">" + news_title + "</h2></a><small><time datetime=\"" + news_time + "\"></time></small><p>" + news_description + "</p><a href=\"" + read_url + "\"><button type=\"button\" class=\"btn btn-primary\">閱讀更多...</button></a>   </div></div></div></div>");
                 });
             }
         });
