@@ -46,3 +46,8 @@
         url(https://fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Black.woff) format('woff'),
         url(https://fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Black.otf) format('opentype');
  }
+
+img{
+	width: auto;
+	height: 80%;
+}
