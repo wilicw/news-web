@@ -10,6 +10,7 @@ $(function(){
             timeout: 10000,
             error: function(xml){
                 alert('讀取錯誤，請檢察網路狀態或重新開啟');
+                window.location.reload(".");
             },
             success: function(xml){
                 $(xml).find("item").each(function(i){
@@ -19,7 +20,7 @@ $(function(){
                     var news_time=$(this).children("pubDate").text();
     		        var news_description=$(this).children("description").text();
                     var read_url="readudn.html?src="+btoa(encodeURIComponent(news_url));
-                    $("#index_body").append("<div class=\"uk-grid\"><div class=\"uk-block\"><h1 class=\"uk-article-title\"><a class=\"uk-link-reset\" href=\"" + read_url + "\">" + news_title + "</a></h1><p class=\"uk-article-meta\">聯合新聞網</p><p class=\"uk-text-meta uk-margin-remove-top\"><time datetime=\"" + news_time + "\">April 01, 2016</time></p><p class=\"uk-text-lead\">" + news_description + "</p><div class=\"uk-grid-small uk-child-width-auto\" uk-grid><div class=\"uk-card-footer\"><a class=\"uk-button uk-button-text\" href=\"" + read_url + "\">閱讀更多...</a></div></div></div></div>");
+                    $("#index_body").append("<div class=\"panel panel-default\"><div class=\"panel-body\"><div class=\"media\"><div class=\"media-body\"><a class=\"media-left\" href=\"" + news_url + "\"><h2 class=\"media-heading\">" + news_title + "</h2></a><small><time datetime=\"" + news_time + "\"></time></small><p>" + news_description + "</p><a href=\"" + read_url + "\"><button type=\"button\" class=\"btn btn-primary\">閱讀更多...</button></a>   </div></div></div></div>");
                 });
             }
         });
