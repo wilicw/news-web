@@ -10,7 +10,7 @@ $(function(){
     var urls = decodeURIComponent(atob(str));
     console.log(urls);
     read_udn()
-    function read_udn() {
+    function read_cna() {
         $.ajax({ //聯合新聞網
             url:urls,
             type: 'GET',
